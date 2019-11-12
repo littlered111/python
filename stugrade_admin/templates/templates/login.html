@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Flasky{% endblock %}
+{% block page_content %}
+<div class="page-header">
+<h>
+        <head>
+                <title></title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link href="css/style.css" rel="stylesheet">
+        </head>
+        <body>
+                欢迎使用学生管理系统XD
+                <form method="get" action='/login'>
+                    <label>用户名：<input type="text" name="user" value=""></label><br>
+                    <label>密码：<input type="password" name="password" value=""></label><br>
+                    <input type="submit" value="登录">
+                </form>
+        </body>   
+    
+</h>
+</div>
+{% endblock %}

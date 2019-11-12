@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Flasky{% endblock %}
+{% block page_content %}
+<div class="page-header">
+<h1><head>
+    <meta charset="UTF-8">
+    <title>学生管理系统</title>
+    <style type="text/css">
+        ul{
+            font-size:30px;
+            color:grey;
+            background:613030;
+            height:50px;
+            width:500px;
+         }
+         a{
+            font-size:25px;
+            color:purple;
+            background:FBD3E5;
+            height:50px;
+            width:500px;
+         }
+
+    </style>
+</head>
+<body bgcolor="FFDCB9">
+
+<table border="2">
+        <tbody>
+
+            <tr>
+                <td><a href="{{url_for('addindex')}}">增加学生信息</a></td>
+            </tr>
+            <tr>
+                <td><a href="{{url_for('delindex')}}">删除学生信息</a></td>
+            </tr>
+
+        </tbody>
+</table>
+
+
+</body>
+</h1>
+</div>
+{% endblock %}
+
+

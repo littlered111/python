@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Flasky{% endblock %}
+{% block page_content %}
+<div class="page-header">
+<h>        
+<head>
+    <meta charset="UTF-8">
+    <title>删除</title>
+    <style type="text/css">
+         tbody{
+            font-size:25px;
+            color:grey;
+            background:EBD3E8;
+            height:50px;
+            width:500px;
+         }
+    </style>
+</head>
+
+<body bgcolor="FFDCB9">
+<form method="get" action='/del'>
+    <table>
+        <tbody>
+            <tr>
+                <td>请输入要删除的学号:</td>
+                <td><input type="text" placehoder="请输入要删除的学号" name="id">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="确定"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</h>
+</div>
+{% endblock %}

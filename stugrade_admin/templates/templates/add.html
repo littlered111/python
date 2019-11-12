@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Flasky{% endblock %}
+{% block page_content %}
+<div class="page-header">
+<h>
+    <head>
+    <meta charset="UTF-8">
+    <title>添加</title>
+    <style type="text/css">
+         tbody{
+            font-size:25px;
+            color:grey;
+            background:EBD3E8;
+            height:50px;
+            width:500px;
+         }
+    </style>
+    </head>
+        <!-- <head>
+                <title></title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link href="css/style.css" rel="stylesheet">
+            </head> -->
+        <body>
+                
+                <form method="get" action='/add'>
+                    <label>学号：<input type="text" name="id" value=""></label><br>
+                    <label>姓名：<input type="text" name="stuname" value=""></label><br>
+                    <label>语文成绩：<input type="text" name="Chinese" value=""></label><br>
+                    <label>数学成绩：<input type="text" name="Math" value=""></label><br>
+                    <label>英语成绩：<input type="text" name="English" value=""></label><br>
+                    <input type="submit" value="提交">
+                </form>
+               
+            </body>   
+    
+</h>
+</div>
+{% endblock %}
