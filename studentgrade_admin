@@ -1,0 +1,3 @@
+a sinple template for students' grades administration.
+framework: flask
+database:MySQL
